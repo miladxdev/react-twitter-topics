@@ -1,6 +1,18 @@
+import { useState } from "react";
 import Button from "./Button"
 
 function Topic({title, subtitle}) {
+    const [btnText, setBtnText] = useState("Follow");
+
+    function follow() {
+        console.log("follow");
+        if (btnText !== "Follow") {
+            setBtnText("Follow");
+        } else {
+            setBtnText("Following");
+        }
+    }
+    
     return (
         <div class="wrap">
             <div className="topic">
@@ -10,7 +22,7 @@ function Topic({title, subtitle}) {
                 </div>
 
                 <div className="col-right">
-                    <Button />
+                    <Button onFollow={() => follow()} text={btnText}/>
                     <span className="icon"><i class="fa fa-times"></i></span>
                 </div>
             </div>

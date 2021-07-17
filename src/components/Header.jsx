@@ -1,8 +1,8 @@
-function Header() {
+function Header({title}) {
     return (
         <div className="wrap">
             <div className="container">
-                <h2>Topics to follow</h2>
+                <h2>{title}</h2>
             </div>
         </div>
     );

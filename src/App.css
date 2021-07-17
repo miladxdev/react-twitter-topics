@@ -18,7 +18,7 @@ body {
 .wrap:not(:last-child) {
   border-bottom: 1px solid hsl(214, 14%, 15%);
 }
-.wrap:hover {
+.wrap:not(:first-child):hover {
   background: hsl(214, 14%, 12%);
 }
 
@@ -65,7 +65,9 @@ body {
 .topic .icon:hover {
   background: rgba(121, 75, 196, 0.1);
 }
-
+.topic h3:hover {
+  text-decoration: underline;
+}
 .btn {
   padding: 8px 16px;
   border: 1px solid rgb(121, 75, 196);
