@@ -7,11 +7,13 @@ function App() {
   return <div className="app">
     <div className="topics-container">
       <Header />
-      <Topic />
-      <Topic />
-      <Topic />
-      <Topic />
-      <Topic />
+
+      <Topic title={"NBA"}  subtitle={"Basketball league"}/>
+      <Topic title={"Football"} subtitle={"Sport"}/>
+      <Topic title={"Starship"} subtitle={"space"}/>
+      <Topic title={"Bitcoin"}  subtitle={"Currency"}/>
+      <Topic title={"Metallica"}  subtitle={"music band"}/>
+
       <Footer />
     </div>
   </div>;

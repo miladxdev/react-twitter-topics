@@ -13,6 +13,7 @@ body {
 .wrap {
   padding: 0 24px;
   /* border: 1px solid red; */
+  transition: background 200ms;
 }
 .wrap:not(:last-child) {
   border-bottom: 1px solid hsl(214, 14%, 15%);
@@ -44,10 +45,10 @@ body {
   display: block;
   color: grey;
 }
-.col-right,
-.col-left {
+.col-right {
   /* border: 1px solid red; */
-  /* flex: 1; */
+  display: flex;
+  align-items: center;
 }
 .topic .icon {
   /* float: right; */
@@ -58,7 +59,8 @@ body {
   width: 32px;
   height: 32px;
   border-radius: 50px;
-  font-size: 26px;
+  font-size: 18px;
+  transition: background 200ms;
 }
 .topic .icon:hover {
   background: rgba(121, 75, 196, 0.1);
@@ -73,6 +75,7 @@ body {
   color: rgb(121, 75, 196);
   font-size: 18px;
   cursor: pointer;
+  transition: background 200ms;
 }
 .btn:hover {
   background: rgba(121, 75, 196, 0.1);
