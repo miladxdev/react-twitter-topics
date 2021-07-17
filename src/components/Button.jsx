@@ -2,8 +2,8 @@ function Button({onFollow, text}) {
      
     return (  
         <button 
-            className="btn" 
             style={text === "Following" ? followingStyle : followStyle }
+            className="btn" 
             onClick={onFollow}>{text}
         </button>
     )
